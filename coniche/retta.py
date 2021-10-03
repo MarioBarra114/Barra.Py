@@ -1,4 +1,3 @@
-
 class retta:
 
     # Attributi di Retta
@@ -14,38 +13,28 @@ class retta:
         
         
         
-        self.m = -a/b
-        self.q = -c/b
-        self.x = x
-        self.y = -b*x/a-c/a
+        #self.m = -a/b
+       # self.q = -c/b
+        #self.x = x
+       # self.y = -b*x/a-c/a
        
         
     #Metodo di tipo Get
-    def esplicita(self):
-        return f'\nEquazione in forma esplicita/n"{self.a}"x+"{self.b}"y+"{self.c}"=0' 
-    
     def implicita(self):
-        return f'\nEquazione in forma implicita/n y="{self.m}"x+"{self.q}"' 
-    
-     def punti(self):
-        return f'\nLa TUPLA è la seguente:"{self.x}" -"{self.y}"' 
+        return f'\nEquazione in forma implicita\n{self.a}x+{self.b}y+{self.c}=0' 
     
     
-retta1 = esplicita(2,8,-12)
+    
+    
+retta1 = retta(2,8,-12)
 
 
 
+print(retta1.implicita())
 
-print("Equazione in forma esplicita")
-print(retta1)
-
-
-print("\nLa singola scheda è:")
-print (giovanni.scheda())
-print (marco.scheda())
-print("\nauto totali: ",auto.parcoAuto)
 
 print("\n\naltro metodo per visualizzare le informazioni (__dict__):")
 
-print(giovanni.__dict__)
-print(marco.__dict__)
+print(retta1.__dict__)
+
+
