@@ -5,19 +5,30 @@ class retta:
     
 
     #Metodo costruttore
-    def __init__(self,a, b, c):
+    def __init__(self,a, b, c, m, q, x):
 
         # Attributi di Istanza
         self.a = a
         self.b = b
         self.c = c
+        self.m = -a/b
+        self.q = -c/b
+        self.x = x
+        self.y = -b*x/a-c/a
        
         
     #Metodo di tipo Get
-    def scheda(self):
-        return f'\nScheda "{self.proprietario}"\n Marca: {self.marca}\n Modello: {self.modello}\n Targa: {self.targa}\n colore: {self.colore}\n assicurazione: {self.assicurazione}\n tipo carburante: {self.tipo_carburante}' 
+    def esplicita(self):
+        return f'\nEquazione in forma esplicita/n"{self.a}"x+"{self.b}"y+"{self.c}"=0' 
     
-giovanni = auto("giovanni","ford","fiesta","AX 123 XA", "rosso", "benzina verde")
+    def implicita(self):
+        return f'\nEquazione in forma implicita/n y="{self.m}"x+"{self.q}"' 
+    
+     def punti(self):
+        return f'\nLa TUPLA è la seguente:"{self.x}" -"{self.y}"' 
+    
+    
+retta1 = retta("giovanni","ford","fiesta","AX 123 XA", "rosso", "benzina verde")
 
 marco = auto("marco","fiat","Bravo","FB 104 HE", "verde", "gpl")
 
