@@ -5,12 +5,15 @@ class retta:
     
 
     #Metodo costruttore
-    def __init__(self,a, b, c, m, q, x):
+    def __init__(self,a, b, c):
 
         # Attributi di Istanza
         self.a = a
         self.b = b
         self.c = c
+        
+        
+        
         self.m = -a/b
         self.q = -c/b
         self.x = x
@@ -28,13 +31,14 @@ class retta:
         return f'\nLa TUPLA è la seguente:"{self.x}" -"{self.y}"' 
     
     
-retta1 = retta("giovanni","ford","fiesta","AX 123 XA", "rosso", "benzina verde")
+retta1 = esplicita(2,8,-12)
 
-marco = auto("marco","fiat","Bravo","FB 104 HE", "verde", "gpl")
 
-print("Il tipo di variabile costruita è:")
-print(giovanni)
-print(marco)
+
+
+print("Equazione in forma esplicita")
+print(retta1)
+
 
 print("\nLa singola scheda è:")
 print (giovanni.scheda())
