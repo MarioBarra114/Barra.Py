@@ -31,7 +31,8 @@ class retta:
         return f'\nla tupla è : A({self.a},{self.b})' 
     
     
-retta1 = retta(a,b,c,x)
+    
+retta1 = retta(2,8,-12,7)
 
 print(retta1.implicita())
 
